@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Suez+One&display=swap');
+
+body {
+  margin: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-image: url("images/pappy.jpg")
+}
+	
+.tb {
+  display: flex;
+  height: 7.75%;
+  width: 100%
+}
+
+.tb .button{ 
+  background-image: linear-gradient(#333333, #262626);
+  padding: 0;
+  border: 2px solid black;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+  float: left;
+  width: calc(100% - 2px / 3);
+  font: bold 2.9vmin 'Inknut Antiqua';
+}
+.tb .button:not(:last-child) {border-right: none}
+
+.tb .button:active {background-color: #1A1A1A}
+
+button:focus {outline:0;}
+
+.mid {
+  display: flex;
+  height: calc(100% - (7.75% * 2));
+  width: 100%
+}
+
+.ml {
+  height: 100%;
+  width: 50%;
+}
+
+.mr {
+  padding: 5.5vh 5vw;
+  display: block;
+  height: calc(100% - 11vh);
+  width: calc(50% - 10vw);
+  border-left: 2px solid black
+}
+
+.mur {
+  display: block;
+  margin: 10px;
+  height: calc(15% - 20px);
+  width: calc(100% - 20px);
+  color: #960000;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px
+}
+
+.mlr {
+  height: 85%;
+  width: 100%;
+  color: #960000;
+  text-align: left;
+  text-decoration: none;
+  font-size: 21px;
+  overflow: auto;
+  padding: 0 5px 0px 5px
+}
+
+.mlr p {margin:auto}
+
+.big{display:flex}
+
+.nbig {display:none}
+
+.shad {text-shadow:1.25px 0px black}
+
+.outline{ 
+  text-shadow: 
+    1.25px 0px #000000,
+    0px 1.25px #000000,
+    -1.25px 0px #000000,
+    0px -1.25px #000000
+}
+
+.shadow{box-shadow:-5px 10px 2.5px rgba(0,0,0,0.5)}
+
+.g-img{content: url("images/green.png")}
+
+.r-img{content: url("images/red.png")}
+
+.blue-img{content: url("images/blue.png")}
+
+.black-img{content: url("images/black.png")}
+
+.t-img{content: url("images/tiamat.jpg")}
+
+.w-img{content: url("images/white.png")}
+
+.cent-img{
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.con-img{
+  border-radius: 10px;
+  max-width: 85%;
+  max-height: 85%
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius:100px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(70,70,70,0.3);
+  border-radius:100px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(40,40,40,0.75);
+  border-radius:100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(40,40,40,1);
+  border-radius:100px;
+}
+
+@media only screen and (max-width:600px){
+	.mid{display:block;}
+	
+	.mlr {font-size: 16px}
+	
+	.big{display: none}
+	
+	.nbig{display: block}
+	
+	.ml {
+		width: 100%;
+		height: 50%
+	}
+	
+	.mr {
+		padding: 5% 5%;
+		margin:0;
+		height: calc(50% - 10%);
+		width: calc(100% - 10%);
+		border-left: 0;
+		border-top: 2px solid black
+	}
+	
+	.mur{font-size:5vmin}
+	
+	.mid {height: 90%;}
+	
+	.tb { height: 10%;}
+	
+	.tb .button{
+	  width: calc(100%/6);
+	  font-size: 3.5vmin
+	}
+}
