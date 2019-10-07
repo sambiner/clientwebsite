@@ -140,8 +140,8 @@ button:focus {outline:0;}
   border-radius:100px;
 }
 
-@media only screen and (max-width:600px){
-	.mid{display:block;}
+@media only screen and (max-width:600px){ /*Media Query ustilizes a breakpoint to rewrite elements and change the layout*/
+	.mid{display:block;} /*based on the size of the viewport*/
 	
 	.mlr {font-size: 16px}
 	
